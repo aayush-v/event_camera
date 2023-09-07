@@ -6,6 +6,7 @@ body {
 font : 73% arial, helvetica, "Trebuchet MS", tahoma, sans-serif;
 background : #D5DBE1 url(images/bg.jpg) top center repeat-y;
 color : #555;
+
 }
 			/*WRAP*/
 #wrap {
@@ -16,11 +17,16 @@ padding: 0;
 }
 			/*BANNER*/
 #masthead {
-height:300px;
+height:250px;
 padding: 0;
 margin-bottom: 0;
 background: #B5B5B5 url(images/ev_ss.png) top center no-repeat;
 background-size: cover;
+margin: 15px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: flex-end; 
 }
 			/*MAIN CONTAINER*/
 #container {
@@ -56,26 +62,40 @@ background:#204883;}
 			/*MAIN CONTENT*/
 #content {
 padding: 1em;
-margin: 0 240px 20px 0;
+margin: 0 320px 20px 0;
 background: #fff;
 }
 			/*SIDEBAR*/
 #sidebar {
 float: right;
-width: 200px;
-margin: 15px 0 0 0;
-padding: 0 1em 20px 1em;
+width: 300px;
+margin: 15px 15px 0 0;
+padding: 0 0 20px 1em;
 background:#fff;
+}
+
+#markdown-container {
+	width: 740px; /* Set a fixed width for the container */
+	height: 250px;
+	margin: 0 auto; /* Center the container on the page */
+	overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#publications {
+	margin: 15px;
+}
+
+#videoPreview {
+	margin: 15px;
 }
 			/*SIDEBAR MENU*/
 #navcontainer {
-width : 200px;
-margin : 0 0 20px 0;
+width : 300px;
+margin : 0 0 0px 0;
 }
-#navcontainer ul {
-margin-left : 0;
-padding-left : 0;
-list-style-type : none;
+
+#navcontainer img {
+margin-bottom : 15px;
 }
 #navcontainer a {
 text-decoration : none;
