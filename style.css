@@ -185,6 +185,15 @@ padding: 10px;
     box-sizing: border-box;
 }
 
+#fullwidthtext {
+	font-weight : bold;
+    box-sizing: border-box;
+	margin: 20px;
+}
+
+#subtopic {
+	font-size: 14px;
+}
 #navcontainer {
     text-align: center; /* Center the image within its container */
 }
@@ -204,4 +213,27 @@ a.more {
 
 a.more:hover {
 background-color: #FDA913; /* Change the background color on hover */
+}
+
+#meet-team {
+	padding: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info {
+	margin-left: 30px;
+    max-width: 300px;
+}
+
+.info h2 {
+	font-size: 20px;
+}
+
+.info p {
+	font-size: 16px;
 }
