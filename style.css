@@ -220,6 +220,21 @@ padding: 10px;
 	margin: 20px;
 }
 
+#fullwidthtext h1 {
+	margin-bottom: 6px;
+	font-family: auto;
+	font-weight: 1000;
+	font-size: 25px;
+}
+
+#fullwidthtext p {
+	font-size: 16px;
+	font-weight : bold;
+	color : black;
+	margin: 0 10px;
+	text-align: justify;
+}
+
 #subtopic {
 	font-size: 14px;
 }
@@ -245,24 +260,35 @@ background-color: #FDA913; /* Change the background color on hover */
 }
 
 #meet-team {
-	padding: 20px;
+	padding: 0 20px;
+	display: flex;
 }
 
 .team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+	flex: 1;
+    text-align: center;
+    padding: 5px;
 }
 
+.person-image {
+    width: 170px; /* Adjust image width as needed */
+    height: 170px; /* Adjust image height as needed */
+    margin-bottom: 5px;
+  }
+
 .info {
-	margin-left: 30px;
+	/* margin-left: 30px; */
     max-width: 300px;
 }
 
 .info h2 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .info p {
-	font-size: 16px;
+	font-size: 12px;
+}
+
+#contact {
+	padding: 25px;
 }
