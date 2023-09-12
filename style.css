@@ -1,0 +1,207 @@
+html, body {
+margin : 0;
+padding : 0;
+}
+body {
+font : 73% arial, helvetica, "Trebuchet MS", tahoma, sans-serif;
+background : #D5DBE1 url(images/bg.jpg) top center repeat-y;
+/* background-size: 100% auto; */
+color : #555;
+
+}
+			/*WRAP*/
+#wrap {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding: 0;
+}
+			/*BANNER*/
+#masthead {
+height:250px;
+padding: 0;
+margin-bottom: 0;
+background: #B5B5B5 url(images/ev_ss.png) top center no-repeat;
+background-size: cover;
+margin: 15px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: flex-end; 
+}
+			/*MAIN CONTAINER*/
+#container {
+width: 820px;
+min-height: 1000px;
+border: 0px solid #aaa;
+margin-left: auto;
+margin-right: auto;
+padding: 0;
+line-height: 1.8em;
+background : #fff;
+color : #555;
+}
+			/*TOP NAVIGATION*/
+#menu {
+height: 50px;
+padding: 0;
+margin-bottom: 0;
+background-color: #D5DBE1;
+}
+#menu{position:relative;display:block;height:42px;font-size:1.2em;
+font-weight:bold;background:#FDA913;
+font-family:Arial,Verdana,Helvitica,sans-serif;}
+
+#menu ul{margin:0;padding:0;list-style-type:none;width:auto;}
+
+#menu ul li{display:block;float:left;margin: 0 0 0 0;}
+
+#menu ul li a{display:block;float:left;color:#214984;text-decoration:none;
+padding:10px 20px 0 20px;height:32px;}
+
+#menu ul li a:hover,#menu ul li a.current{color:#FDA913;
+background:#204883;}
+			/*MAIN CONTENT*/
+#content {
+padding: 1em;
+margin: 0 320px 20px 0;
+background: #fff;
+}
+
+#content h1 {
+	font-size: 183%;
+}
+			/*SIDEBAR*/
+#sidebar {
+float: right;
+width: 300px;
+margin: 15px 15px 0 0;
+padding: 0 0 20px 1em;
+background:#fff;
+}
+
+#markdown-container {
+	/* width: 740px;  */
+	height: 250px;
+	margin: 0 auto; /* Center the container on the page */
+	overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#publications {
+	margin: 15px;
+}
+
+#videoPreview {
+	margin: 15px;
+}
+			/*SIDEBAR MENU*/
+#navcontainer {
+width : 300px;
+margin : 0 0 0px 0;
+}
+
+#navcontainer img {
+margin-bottom : 15px;
+}
+#navcontainer a {
+text-decoration : none;
+display : block;
+padding : 3px;
+width : 200px;
+border-bottom : 1px solid #eee;
+background : #fff;
+color : #FDA913;
+}
+#navcontainer a:link, #navlist a:visited {
+color : #FDA913;
+background : #fff;
+}
+#navcontainer a:hover {
+text-decoration : none;
+background : #eee;
+color : #214984;
+}
+			/*FOOTER*/
+#footer {
+clear: both;
+width: 820px;
+padding: 20px 0;
+background-color: #214984;
+margin-top: 0;
+text-align: center;
+color: white;
+margin: 0 auto;
+}
+			/*TYPOGRAPHY*/
+h1 {
+margin: 0;
+padding: 10px 0 10px 5px;
+font-size: 160%;
+letter-spacing: 3px;
+color: #214984;
+}
+blockquote {
+font-weight : bold;
+font-style : italic;
+color : #b29b35;
+margin: 0 10px;
+}
+			/*LINKS*/
+a:link, a:visited {
+color : #FDA913;
+background : inherit;
+text-decoration : underline;
+}
+a:hover {
+color : #154182;
+background : inherit;
+text-decoration : none;
+}
+a img {
+border: 0;
+}
+			/*IMAGES*/
+.right {
+float: right;
+border: 0px solid #656C4A;
+margin: 5px 0 10px 0;
+padding: 10px;
+}	
+
+.horizontalcontainer {
+    display: flex;
+    align-items: center;
+}
+
+
+#leftcontent {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#rightcontentimage {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#navcontainer {
+    text-align: center; /* Center the image within its container */
+}
+
+
+a.more {
+	display: inline-block;
+	padding: 5px 15px; /* Adjust padding as needed */
+	background-color: #214984; /* Set the background color */
+	color: #fff; /* Set the text color */
+	text-decoration: none; /* Remove underline */
+	border-radius: 4px; /* Add rounded corners */
+	font-weight: bold; /* Optionally, make the text bold */
+	text-align: center; /* Center the text */
+	transition: background-color 0.3s; /* Add a transition for hover effect */
+  }
+
+a.more:hover {
+background-color: #FDA913; /* Change the background color on hover */
+}
