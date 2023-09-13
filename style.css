@@ -25,13 +25,26 @@ background: #B5B5B5 url(images/ev_ss.png) top center no-repeat;
 background-size: cover;
 margin: 15px;
 text-align: center;
-display: flex;
+/* display: flex; */
 justify-content: center;
 align-items: flex-end; 
 }
-			/*MAIN CONTAINER*/
+
+#masthead h1 {
+	color: orange;
+	padding-top: 60px;
+	font-size: 40px;
+}
+
+#masthead h2 {
+	color: bisque;
+	padding-top: 0px;
+	font-size: 20px;
+}
+
+/*MAIN CONTAINER*/
 #container {
-width: 820px;
+width: 1000px;
 min-height: 1000px;
 border: 0px solid #aaa;
 margin-left: auto;
@@ -40,8 +53,14 @@ padding: 0;
 line-height: 1.8em;
 background : #fff;
 color : #555;
+padding-bottom: 25px;
 }
 			/*TOP NAVIGATION*/
+#university {
+	text-align-last: justify;
+	padding: 14px;
+}
+
 #menu {
 height: 50px;
 padding: 0;
@@ -62,6 +81,11 @@ padding:10px 20px 0 20px;height:32px;}
 #menu ul li a:hover,#menu ul li a.current{color:#FDA913;
 background:#204883;}
 			/*MAIN CONTENT*/
+#marquee {
+	font-size: 18px;
+	font-weight: bold;
+}
+
 #content {
 padding: 1em;
 margin: 0 320px 20px 0;
@@ -69,7 +93,10 @@ background: #fff;
 }
 
 #content h1 {
-	font-size: 183%;
+	margin-bottom: 6px;
+	font-family: auto;
+	font-weight: 800;
+	font-size: 25px;
 }
 			/*SIDEBAR*/
 #sidebar {
@@ -88,10 +115,11 @@ background:#fff;
 }
 
 #publications {
-	margin: 15px;
+	margin: 15px 15px 0 15px;
 }
 
 #videoPreview {
+	text-align: center;
 	margin: 15px;
 }
 			/*SIDEBAR MENU*/
@@ -124,7 +152,7 @@ color : #214984;
 			/*FOOTER*/
 #footer {
 clear: both;
-width: 820px;
+width: 1000px;
 padding: 20px 0;
 background-color: #214984;
 margin-top: 0;
@@ -140,11 +168,13 @@ font-size: 160%;
 letter-spacing: 3px;
 color: #214984;
 }
+
 blockquote {
-font-weight : bold;
-font-style : italic;
-color : #b29b35;
-margin: 0 10px;
+	font-size: 16px;
+	font-weight : bold;
+	color : black;
+	margin: 0 10px;
+	text-align: justify;
 }
 			/*LINKS*/
 a:link, a:visited {
@@ -191,6 +221,21 @@ padding: 10px;
 	margin: 20px;
 }
 
+#fullwidthtext h1 {
+	margin-bottom: 6px;
+	font-family: auto;
+	font-weight: 1000;
+	font-size: 25px;
+}
+
+#fullwidthtext p {
+	font-size: 16px;
+	font-weight : bold;
+	color : black;
+	margin: 0 10px;
+	text-align: justify;
+}
+
 #subtopic {
 	font-size: 14px;
 }
@@ -216,24 +261,35 @@ background-color: #FDA913; /* Change the background color on hover */
 }
 
 #meet-team {
-	padding: 20px;
+	padding: 0 20px;
+	display: flex;
 }
 
 .team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+	flex: 1;
+    text-align: center;
+    padding: 5px;
 }
 
+.person-image {
+    width: 170px; /* Adjust image width as needed */
+    height: 170px; /* Adjust image height as needed */
+    margin-bottom: 5px;
+  }
+
 .info {
-	margin-left: 30px;
+	/* margin-left: 30px; */
     max-width: 300px;
 }
 
 .info h2 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .info p {
-	font-size: 16px;
+	font-size: 12px;
+}
+
+#contact {
+	padding: 25px;
 }
