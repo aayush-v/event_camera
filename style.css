@@ -53,6 +53,7 @@ padding: 0;
 line-height: 1.8em;
 background : #fff;
 color : #555;
+padding-bottom: 25px;
 }
 			/*TOP NAVIGATION*/
 #university {
@@ -94,7 +95,7 @@ background: #fff;
 #content h1 {
 	margin-bottom: 6px;
 	font-family: auto;
-	font-weight: 1000;
+	font-weight: 800;
 	font-size: 25px;
 }
 			/*SIDEBAR*/

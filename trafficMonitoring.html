@@ -4,6 +4,40 @@
 <title>Event Sensing</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <style>
+    table {
+        margin: 0 25px;
+        width: 95%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f3f6f6;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    /* Customize column widths */
+    th:nth-child(2), td:nth-child(2) {
+        width: 25%;
+    }
+
+    th:nth-child(3), td:nth-child(3) {
+        width: 35%; /* Adjust the width of the Description column */
+    }
+
+    th:nth-child(4), td:nth-child(4) {
+        width: 10%;
+    }
+
+    th:nth-child(5), td:nth-child(5) {
+        width: 12%;
+    }
+  </style>
 </head>
 <body>
 <div id="wrap">
@@ -31,11 +65,6 @@
         especially in challenging situations. A noteworthy addition to this arsenal is the event camera, 
         a cutting-edge technology that has garnered significant interest from researchers in the fields 
         of visual perception and robotics.
-        The event camera stands out due to its neuromorphic vision style, which enables it to asynchronously 
-        capture motion information at remarkably high speeds. This sets it apart from conventional RGB 
-        cameras that capture images at fixed intervals. Instead of capturing entire frames, event cameras 
-        focus on recording intensity changes. This approach brings forth a multitude of advantages that are 
-        invaluable in the context of traffic monitoring.
       </p><br />      
       <p>
         The distinctive features of event cameras make them especially effective for outdoor long-term 
@@ -61,6 +90,55 @@
         To access the dataset, please click here.
       </p>
     </div>
+    <div id="fullwidthtext">
+      <h1>Datasets</h1>
+      The datasets are available in RAW format.
+    </div>
+    <table>
+      <tr>
+          <th>Name</th>
+          <th>Screenshot</th>
+          <th>Description and subjects</th>
+          <th>Duration</th>
+          <th>Recording</th>
+      </tr>
+      <tr>
+          <td>Traffic intersection data</td>
+          <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
+          <td>Data collected from a traffic signal height at an intersection with vehicles, pedestrians, and micro mobility users.</td>
+          <td>3 hours</td>
+          <td>3</td>
+      </tr>
+      <tr>
+        <td>Ground level perspective intersection data</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+        <td>Data collected from ground level height at an intersection with vehicles, pedestrians and micro mobility users.</td>
+        <td>2 hours</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Ground level perspective pedestrian data</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+        <td>Data collected from ground level height with pedestrians and micro mobility users.</td></td>
+        <td>2 hours*</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Bridge data</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+        <td>Data collected focused on incoming and outgoing vehicular traffic from over a bridge. </td>
+        <td>1 hour</td>
+        <td>5</td>
+    </tr>
+      <tr>
+        <td>Driving</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+        <td>Automotive data with multiple traffic participants</td>
+        <td>45 minutes</td>
+        <td>5</td>
+      </tr>
+    </table>
+
 
   </div>
 </div>
