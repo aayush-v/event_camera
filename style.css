@@ -216,7 +216,7 @@ padding: 10px;
 }
 
 #fullwidthtext {
-	font-weight : bold;
+	/* font-weight : bold; */
     box-sizing: border-box;
 	margin: 20px;
 }
@@ -230,7 +230,6 @@ padding: 10px;
 
 #fullwidthtext p {
 	font-size: 16px;
-	font-weight : bold;
 	color : black;
 	margin: 0 10px;
 	text-align: justify;
