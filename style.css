@@ -57,8 +57,26 @@ padding-bottom: 25px;
 }
 			/*TOP NAVIGATION*/
 #university {
-	text-align-last: justify;
 	padding: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#asuapg {
+	flex: 1;
+    display: flex;
+}
+
+#asuapg img {
+	margin-right: 10px;;
+}
+
+#asulogo {
+	flex: 1;
+    text-align: right;
+}
+
+#asulogo img {
 }
 
 #menu {
@@ -171,7 +189,6 @@ color: #214984;
 
 blockquote {
 	font-size: 16px;
-	font-weight : bold;
 	color : black;
 	margin: 0 10px;
 	text-align: justify;
