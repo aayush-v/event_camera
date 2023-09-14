@@ -6,8 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <style>
     table {
-        margin: 0 25px;
-        width: 95%;
+        margin: 0 15px;
         border-collapse: collapse;
     }
     th, td {
@@ -23,16 +22,25 @@
     }
     /* Customize column widths */
     th:nth-child(1), td:nth-child(1) {
-        width: 15%;
+        width: 10%;
+      }
+    th:nth-child(2), td:nth-child(2) {
+        width: 2%;
     }
-    th:nth-child(3), td:nth-child(3) {
+      th:nth-child(3), td:nth-child(3) {
         width: 17%;
     }
     th:nth-child(4), td:nth-child(4) {
         width: 13%;
     }
+    th:nth-child(5), td:nth-child(5) {
+        width: 3%;
+    }
+    th:nth-child(6), td:nth-child(6) {
+        width: 12%;
+    }
     th:nth-child(7), td:nth-child(7) {
-        width: 17%;
+        width: 11%;
     }
     /* th:nth-child(3), td:nth-child(3) {
         width: 35%; /* Adjust the width of the Description column */
@@ -40,9 +48,7 @@
     th:nth-child(4), td:nth-child(4) {
         width: 10%;
     }
-    th:nth-child(5), td:nth-child(5) {
-        width: 12%;
-    } */
+ */
 
     .image-container {
       display: flex;
@@ -59,8 +65,13 @@
 <div id="wrap">
   <div id="container">
     <div id="university">
-      <img src="images/ASUAPGlogo.png" alt="ASU APG" height="60">
-      <img src="images/full_logo.webp" alt="Arizona State University" width="277" height="50">
+      <div id="asuapg">
+        <img src="images/ASUAPGlogo.png" alt="ASU APG" height="60" width="60">
+        <img src="images/ASU APG.png" alt="Active Perception Group" height = "60">
+      </div>
+      <div id="asulogo">
+        <img src="images/full_logo.webp" alt="Arizona State University" width="277" height="50">
+        </div>
       </div>
     <div id="menu">
       <ul>
@@ -138,58 +149,86 @@
           <th>Format offered</th>
         </tr>
         <tr>
-            <td>Four-way intersection</td>
-            <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
-            <td>Data of a traffic intersection collected from the height of a traffic signal</td>
-            <td>Vehicles<br> Pedestrians<br>Micro mobility users</td>
+            <td>Elevated four-way intersection</td>
+            <td><img src="images/ev_ss.png" alt="Screenshot 1" width="160"></td>
+            <td>Data of a traffic intersection at S Mill Ave, Tempe AZ collected from an elevated view </td>
+            <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
             <td>4 hours</td>
-            <td>Day<br>Night</td>
-            <td>Recording in RAW format <br>Labels in numpy format</td>
+            <td>
+              Daytime - standard
+              <br>
+              Daytime - high glare
+              <br>
+              Night - twilight
+              <br>
+              Night - post sunset
+            </td>
+            <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
         </tr>
         <tr>
-          <td>Ground four-way intersection</td>
-          <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
-          <td>Data of a traffic intersection collected from a ground level height</td>
-          <td>Vehicles<br>Pedestrians <br>Micro mobility users</td>
-          <td>2 hours*</td>
-          <td>Day<br>Night<br>Rainy</td>
-          <td>Recording in RAW format </td>
-      </tr>
-        <tr>
-          <td>Two-way roadways</td>
-          <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-          <td>Data of incoming and outgoing vehicular traffic at a two-way roadways collected from the height of a traffic signal</td>
-          <td>Vehicles</td>
+          <td>Ground level four-way intersection</td>
+          <td><img src="images/ev_ss.png" alt="Screenshot 1" width="160"></td>
+          <td>Data of a traffic intersection at S Mill Ave, Tempe AZ collected from a ground level </td>
+          <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
           <td>2 hours</td>
-          <td>Night</td>
-          <td>Recording in RAW format </td>
+          <td>
+            Daytime - standard
+            <br>
+            Daytime - rainy
+            <br>
+            Night - twilight
+            <br>
+            Night - post sunset
+          </td>
+          <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
+    </tr>
+        <tr>
+          <td>Elevated two-way roadways</td>
+          <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
+          <td>Data of incoming and outgoing vehicular traffic at a two-way roadways in Tempe AZ collected from an elevated view</td>
+          <td>Vehicles: car, truck, bus<br></td>
+          <td>2 hours</td>
+          <td>
+            Day - standard
+            <br>
+            Night - twilight
+            <br>
+            Night - post sunset
+          </td>
+          <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
       </tr>
       <tr>
         <td>Freeway</td>
-        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-        <td>Data of incoming and outgoing vehicular traffic at a freeway collected from the height of a traffic signal</td>
-        <td>Vehicles</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
+        <td>Data of incoming and outgoing vehicular traffic at a freeway in Tempe AZ collected from an elevated view</td>
+        <td>Vehicles: car, truck, bus<br></td>
         <td>1 hour</td>
-        <td>Day</td>
-        <td>Recording in RAW format </td>
+        <td>
+          Day - standard
+        </td>
+      <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
       </tr>
       <tr>
         <td>Campus Premises</td>
-        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-        <td>Data collected within the campus premises from a ground level height</td></td>
-        <td>Pedestrians <br>Micro mobility users</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
+        <td>Data collected within the campus premises at ASU from a ground level</td></td>
+        <td>Pedestrians<br>Bicycle<br>Bike<br> Wheelchair <br>Skateboard</td>
         <td>1 hour</td>
-        <td>Day</td>
-        <td>Recording in RAW format </td>
+        <td>Daytime - standard
+          <br>
+          Nighttime - twilight
+          <br>
+        </td>
+        <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
       </tr>
       <tr>
         <td>Ego-vehicle</td>
-        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-        <td>Automotive data with multiple traffic participants</td>
-        <td>Vehicles<br>Pedestrians<br>Micro mobility users</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
+        <td>Automotive data at Tempe AZ</td>
+        <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
         <td>1 hour</td>
-        <td>Day</td>
-        <td>Recording in RAW format </td>
+        <td>Daytime - standard</td>
+        <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
       </tr>
     </table>
   </div>
