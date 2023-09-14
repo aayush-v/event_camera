@@ -25,17 +25,24 @@
     th:nth-child(2), td:nth-child(2) {
         width: 25%;
     }
-
     th:nth-child(3), td:nth-child(3) {
         width: 35%; /* Adjust the width of the Description column */
     }
-
     th:nth-child(4), td:nth-child(4) {
         width: 10%;
     }
-
     th:nth-child(5), td:nth-child(5) {
         width: 12%;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -77,8 +84,12 @@
         to handle such scenarios with finesse. Their unique approach to capturing intensity changes ensures 
         that even in the presence of intense sunlight, they continue to provide clear and detailed data, 
         enabling traffic management systems to operate seamlessly throughout the day.</p> <br>
-        <img src="images/glare.png" alt="Electric Vehicle" width="260" height="245">
-        <p>
+        <div class="image-container">
+          <img src="images/setup-pics/IMG_5561.jpeg" alt="Image 1" width="240">
+          <img src="images/setup-pics/IMG_5571.jpeg" alt="Image 2" width="240">
+          <img src="images/setup-pics/IMG_8857.jpg" alt="Image 4" width="240">
+          <img src="images/setup-pics/IMG_4.png" alt="Image 3" width="240">
+        </div>        <p>
         The capability of event cameras to maintain clarity in high-glare environments further underscores 
         their suitability for comprehensive, round-the-clock traffic monitoring solutions.
       </p>
