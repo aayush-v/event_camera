@@ -267,12 +267,12 @@ background-color: #FDA913; /* Change the background color on hover */
 .team-member {
 	flex: 1;
     text-align: center;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .person-image {
-    width: 170px; /* Adjust image width as needed */
-    height: 170px; /* Adjust image height as needed */
+    width: 192px; /* Adjust image width as needed */
+    height: 192px; /* Adjust image height as needed */
     margin-bottom: 5px;
   }
 
