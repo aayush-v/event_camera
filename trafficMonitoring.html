@@ -22,18 +22,21 @@
         background-color: #f9f9f9;
     }
     /* Customize column widths */
-    th:nth-child(2), td:nth-child(2) {
-        width: 25%;
+    th:nth-child(1), td:nth-child(1) {
+        width: 15%;
     }
-    th:nth-child(3), td:nth-child(3) {
+    th:nth-child(7), td:nth-child(7) {
+        width: 8%;
+    }
+    /* th:nth-child(3), td:nth-child(3) {
         width: 35%; /* Adjust the width of the Description column */
-    }
+    /* }
     th:nth-child(4), td:nth-child(4) {
         width: 10%;
     }
     th:nth-child(5), td:nth-child(5) {
         width: 12%;
-    }
+    } */
 
     .image-container {
       display: flex;
@@ -85,11 +88,24 @@
         that even in the presence of intense sunlight, they continue to provide clear and detailed data, 
         enabling traffic management systems to operate seamlessly throughout the day.</p> <br>
         <div class="image-container">
-          <img src="images/setup-pics/IMG_5561.jpeg" alt="Image 1" width="240">
-          <img src="images/setup-pics/IMG_5571.jpeg" alt="Image 2" width="240">
           <img src="images/setup-pics/IMG_8857.jpg" alt="Image 4" width="240">
           <img src="images/setup-pics/IMG_4.png" alt="Image 3" width="240">
-        </div>        <p>
+          <img src="images/setup-pics/IMG_5561.jpeg" alt="Image 1" width="240">
+          <img src="images/setup-pics/IMG_5571.jpeg" alt="Image 2" width="240">
+        </div> 
+        <div class="image-container">
+          <img src="images/rgb_h_intersection.png" alt="Image 4" width="240">
+          <img src="images/rgb_campus.png" alt="Image 1" width="240">
+          <img src="images/rgb_intersection.png" alt="Image 3" width="240">
+          <img src="images/rgb_freeway.png" alt="Image 2" width="240">
+        </div>        
+        <div class="image-container">
+          <img src="images/ev_intersection.png" alt="Image 4" width="240">
+          <img src="images/ev_campus.png" alt="Image 1" width="240">
+          <img src="images/ev_wheelchair.png" alt="Image 3" width="240">
+          <img src="images/ev_driving.png" alt="Image 2" width="240">
+        </div> 
+      <p>
         The capability of event cameras to maintain clarity in high-glare environments further underscores 
         their suitability for comprehensive, round-the-clock traffic monitoring solutions.
       </p>
@@ -108,49 +124,68 @@
     <table>
       <tr>
           <th>Name</th>
-          <th>Screenshot</th>
-          <th>Description and subjects</th>
+          <th>Sample</th>
+          <th>Description</th>
+          <th>Subjects</th>
           <th>Duration</th>
-          <th>Recording</th>
-      </tr>
-      <tr>
-          <td>Traffic intersection data</td>
+          <th>Weather conditions</th>
+          <th>Format offered</th>
+        </tr>
+        <tr>
+            <td>Four-way intersection</td>
+            <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
+            <td>Data collected from a traffic signal height at a traffic intersection</td>
+            <td>Vehicles, pedestrians, and micro mobility users</td>
+            <td>4 hours</td>
+            <td>Day, Night</td>
+            <td>RAW files</td>
+        </tr>
+        <tr>
+          <td>Four-way intersection</td>
           <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
-          <td>Data collected from a traffic signal height at an intersection with vehicles, pedestrians, and micro mobility users.</td>
-          <td>3 hours</td>
-          <td>3</td>
+          <td>Data collected from a ground level height at a traffic intersection</td>
+          <td>Vehicles, pedestrians, and micro mobility users</td>
+          <td>2 hours*</td>
+          <td>Day, Night</td>
+          <td>RAW files</td>
+      </tr>
+        <tr>
+          <td>Two-way roadways</td>
+          <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+          <td>Data collected from ground level height at an intersection with vehicles, pedestrians and micro mobility users.</td>
+          <td>Vehicles</td>
+          <td>2 hours</td>
+          <td>Night</td>
+          <td>RAW files</td>
       </tr>
       <tr>
-        <td>Ground level perspective intersection data</td>
-        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-        <td>Data collected from ground level height at an intersection with vehicles, pedestrians and micro mobility users.</td>
-        <td>2 hours</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Ground level perspective pedestrian data</td>
-        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
-        <td>Data collected from ground level height with pedestrians and micro mobility users.</td></td>
-        <td>2 hours*</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Bridge data</td>
+        <td>Freeway</td>
         <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
         <td>Data collected focused on incoming and outgoing vehicular traffic from over a bridge. </td>
+        <td>Vehicles</td>
         <td>1 hour</td>
-        <td>5</td>
-    </tr>
+        <td>Day</td>
+        <td>RAW files</td>
+      </tr>
       <tr>
-        <td>Driving</td>
+        <td>Campus Premises</td>
+        <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
+        <td>Data collected from ground level height with pedestrians and micro mobility users.</td></td>
+        <td>Pedestrians and micro mobility users</td>
+        <td>1 hour</td>
+        <td>Day</td>
+        <td>RAW files</td>
+      </tr>
+      <tr>
+        <td>Ego-vehicle</td>
         <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
         <td>Automotive data with multiple traffic participants</td>
-        <td>45 minutes</td>
-        <td>5</td>
+        <td>Vehicles, pedestrians, and micro mobility users</td>
+        <td>1 hour</td>
+        <td>Day</td>
+        <td>RAW files</td>
       </tr>
     </table>
-
-
   </div>
 </div>
 <div id="footer"> <a href="#">homepage</a> | <a href="#">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a><br/>
