@@ -292,3 +292,8 @@ background-color: #FDA913; /* Change the background color on hover */
 #contact {
 	padding: 25px;
 }
+
+#contact p {
+	font-size: 14px;
+	margin-top: 0;
+}
