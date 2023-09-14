@@ -25,8 +25,14 @@
     th:nth-child(1), td:nth-child(1) {
         width: 15%;
     }
+    th:nth-child(3), td:nth-child(3) {
+        width: 17%;
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 13%;
+    }
     th:nth-child(7), td:nth-child(7) {
-        width: 8%;
+        width: 17%;
     }
     /* th:nth-child(3), td:nth-child(3) {
         width: 35%; /* Adjust the width of the Description column */
@@ -119,7 +125,7 @@
     </div>
     <div id="fullwidthtext">
       <h1>Datasets</h1>
-      The datasets are available in RAW format.
+      <p>The datasets are available in RAW format.</p>
     </div>
     <table>
       <tr>
@@ -135,19 +141,19 @@
             <td>Four-way intersection</td>
             <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
             <td>Data of a traffic intersection collected from the height of a traffic signal</td>
-            <td>Vehicles, pedestrians, and micro mobility users</td>
+            <td>Vehicles<br> Pedestrians<br>Micro mobility users</td>
             <td>4 hours</td>
-            <td>Day, Night</td>
-            <td>RAW files</td>
+            <td>Day<br>Night</td>
+            <td>Recording in RAW format <br>Labels in numpy format</td>
         </tr>
         <tr>
           <td>Ground four-way intersection</td>
           <td><img src="images/ev_ss.png" alt="Screenshot 1" width="200"></td>
           <td>Data of a traffic intersection collected from a ground level height</td>
-          <td>Vehicles, pedestrians, and micro mobility users</td>
+          <td>Vehicles<br>Pedestrians <br>Micro mobility users</td>
           <td>2 hours*</td>
-          <td>Day, Night</td>
-          <td>RAW files</td>
+          <td>Day<br>Night<br>Rainy</td>
+          <td>Recording in RAW format </td>
       </tr>
         <tr>
           <td>Two-way roadways</td>
@@ -156,7 +162,7 @@
           <td>Vehicles</td>
           <td>2 hours</td>
           <td>Night</td>
-          <td>RAW files</td>
+          <td>Recording in RAW format </td>
       </tr>
       <tr>
         <td>Freeway</td>
@@ -165,25 +171,25 @@
         <td>Vehicles</td>
         <td>1 hour</td>
         <td>Day</td>
-        <td>RAW files</td>
+        <td>Recording in RAW format </td>
       </tr>
       <tr>
         <td>Campus Premises</td>
         <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
         <td>Data collected within the campus premises from a ground level height</td></td>
-        <td>Pedestrians and micro mobility users</td>
+        <td>Pedestrians <br>Micro mobility users</td>
         <td>1 hour</td>
         <td>Day</td>
-        <td>RAW files</td>
+        <td>Recording in RAW format </td>
       </tr>
       <tr>
         <td>Ego-vehicle</td>
         <td><img src="images/ev_ss.png" alt="Screenshot 2" width="200"></td>
         <td>Automotive data with multiple traffic participants</td>
-        <td>Vehicles, pedestrians, and micro mobility users</td>
+        <td>Vehicles<br>Pedestrians<br>Micro mobility users</td>
         <td>1 hour</td>
         <td>Day</td>
-        <td>RAW files</td>
+        <td>Recording in RAW format </td>
       </tr>
     </table>
   </div>
