@@ -86,7 +86,7 @@
     </div>
 
     <div id="fullwidthtext">
-      <h1>Need for Event Vision in Traffic Monitoring</h1>
+      <h1>Event Vision for Traffic Monitoring</h1>
       <p>
         In the realm of Intelligent Transportation Systems (ITS), the integration of various sensors 
         like radar and traditional frame cameras has been instrumental in bolstering system resilience, 
@@ -94,18 +94,17 @@
         a cutting-edge technology that has garnered significant interest from researchers in the fields 
         of visual perception and robotics.
       </p><br />   
-      <
-      <div class="image-container">
-        <img src="images/setup-pics/IMG_8857.jpg" alt="Image 4" width="240">
-        <img src="images/setup-pics/IMG_4.png" alt="Image 3" width="240">
-        <img src="images/setup-pics/IMG_5561.jpeg" alt="Image 1" width="240">
-        <img src="images/setup-pics/IMG_5571.jpeg" alt="Image 2" width="240">
-      </div> 
       <div class="image-container">
         <img src="images/rgb_h_intersection.png" alt="Image 4" width="240">
         <img src="images/rgb_campus.png" alt="Image 1" width="240">
         <img src="images/rgb_roadway.png" alt="Image 2" width="240">
         <img src="images/rgb_intersection.png" alt="Image 3" width="240">
+      </div> 
+      <div class="image-container">
+        <img src="images/setup-pics/IMG_8857.jpg" alt="Image 4" width="240">
+        <img src="images/setup-pics/IMG_4.png" alt="Image 3" width="240">
+        <img src="images/setup-pics/IMG_5561.jpeg" alt="Image 1" width="240">
+        <img src="images/setup-pics/IMG_5571.jpeg" alt="Image 2" width="240">
       </div>  
       <br>
       <p>
@@ -119,13 +118,6 @@
         to handle such scenarios with finesse. Their unique approach to capturing intensity changes ensures 
         that even in the presence of intense sunlight, they continue to provide clear and detailed data, 
         enabling traffic management systems to operate seamlessly throughout the day.</p> <br>
-       
-        <!-- <div class="image-container">
-          <img src="images/ev_intersection.png" alt="Image 4" width="240">
-          <img src="images/ev_campus.png" alt="Image 1" width="240">
-          <img src="images/ev_wheelchair.png" alt="Image 3" width="240">
-          <img src="images/ev_driving.png" alt="Image 2" width="240">
-        </div>  -->
       <p>
         The capability of event cameras to maintain clarity in high-glare environments further underscores 
         their suitability for comprehensive, round-the-clock traffic monitoring solutions.
@@ -149,14 +141,14 @@
           <th>Description</th>
           <th>Subjects</th>
           <th>Duration</th>
-          <th>Weather conditions</th>
-          <th>Format offered</th>
+          <th>Weather Conditions</th>
+          <th>Format Offered</th>
         </tr>
         <tr>
-            <td>Elevated four-way intersection</td>
+            <td>Elevated View Four-Way Intersection</td>
             <td><img src="images/ev_intersection.png" alt="Screenshot 1" width="160"></td>
             <td>Data of a traffic intersection at S Mill Ave, Tempe AZ collected from an elevated view </td>
-            <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
+            <td>Vehicles: car, truck, bus, tram<br> Pedestrian<br>Bicycle<br>Bike<br> Wheelchair</td>
             <td>4 hours</td>
             <td>
               Daytime - standard
@@ -170,10 +162,10 @@
             <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
         </tr>
         <tr>
-          <td>Ground level four-way intersection</td>
-          <td><img src="images/ev.png" alt="Screenshot 1" width="160"></td>
+          <td>Ground Level Four-Way Intersection</td>
+          <td><img src="images/ev_g_intersection_rain.png" alt="Screenshot 1" width="160"></td>
           <td>Data of a traffic intersection at S Mill Ave, Tempe AZ collected from a ground level </td>
-          <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
+          <td>Vehicles: car, truck, bus, tram<br> Pedestrian<br>Bicycle<br>Bike<br> Wheelchair</td>
           <td>2 hours</td>
           <td>
             Daytime - standard
@@ -187,10 +179,10 @@
           <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
     </tr>
         <tr>
-          <td>Elevated two-way roadways</td>
+          <td>Elevated View Two-Way Roadways</td>
           <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
           <td>Data of incoming and outgoing vehicular traffic at a two-way roadways in Tempe AZ collected from an elevated view</td>
-          <td>Vehicles: car, truck, bus<br></td>
+          <td>Vehicles: car, truck, bus, tram<br></td>
           <td>2 hours</td>
           <td>
             Day - standard
@@ -205,7 +197,7 @@
         <td>Freeway</td>
         <td><img src="images/ev_ss.png" alt="Screenshot 2" width="160"></td>
         <td>Data of incoming and outgoing vehicular traffic at a freeway in Tempe AZ collected from an elevated view</td>
-        <td>Vehicles: car, truck, bus<br></td>
+        <td>Vehicles: car, truck, bus, tram<br></td>
         <td>1 hour</td>
         <td>
           Day - standard
@@ -216,7 +208,7 @@
         <td>Campus Premises</td>
         <td><img src="images/ev_campus.png" alt="Screenshot 2" width="160"></td>
         <td>Data collected within the campus premises at ASU from a ground level</td></td>
-        <td>Pedestrians<br>Bicycle<br>Bike<br> Wheelchair <br>Skateboard</td>
+        <td>Pedestrian<br>Bicycle<br>Bike<br> Wheelchair <br>Skateboard</td>
         <td>1 hour</td>
         <td>Daytime - standard
           <br>
@@ -226,10 +218,10 @@
         <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
       </tr>
       <tr>
-        <td>Ego-vehicle</td>
+        <td>Ego-Vehicle</td>
         <td><img src="images/ev_driving.png" alt="Screenshot 2" width="160"></td>
         <td>Automotive data at Tempe AZ</td>
-        <td>Vehicles: car, truck, bus<br> Pedestrians<br>Bicycle<br>Bike<br> Wheelchair</td>
+        <td>Vehicles: car, truck, bus, tram<br> Pedestrian<br>Bicycle<br>Bike<br> Wheelchair</td>
         <td>1 hour</td>
         <td>Daytime - standard</td>
         <td>RAW<br>DAT<br>HDF5<br>Labels in numpy</td>
