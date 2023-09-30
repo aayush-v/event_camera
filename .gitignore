@@ -4,3 +4,5 @@
 # dataset files
 .hdf5
 .h5
+
+.npy
