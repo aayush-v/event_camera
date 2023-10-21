@@ -17,34 +17,31 @@ def createEventTimeHistogram(original_paths):
     f1ev = f1['events']['t'][6500000:]
     f2ev = f2['events']['t'][1500000:]
 
-    f3 = tables.open_file(original_paths[2], mode='r')
-    dataset = f3.root.events
-    f3ev = dataset['t']
+    # f3 = tables.open_file(original_paths[2], mode='r')
+    # dataset = f3.root.events
+    # f3ev = dataset['t']
 
     num_bins = 500
-    units = 1_000_00
+    units = 1_000_000
     max_duration = min(f1['events']['t'][-1], f2['events']['t'][-1])
 
     bin_edges = np.linspace(1, max_duration, num_bins)
     bin_counts1, _ = np.histogram(f1ev, bins=bin_edges)
     bin_counts2, _ = np.histogram(f2ev, bins=bin_edges)
-    bin_counts3, _ = np.histogram(f3ev, bins=bin_edges)
+    # bin_counts3, _ = np.histogram(f3ev, bins=bin_edges)
 
     bin_counts1 = bin_counts1 / units
     bin_counts2 = bin_counts2 / units
-    bin_counts3 = bin_counts3 / units
-
-    # bin_counts1 = np.log2(bin_counts1)
-    # bin_counts2 = np.log2(bin_counts2)
-    # bin_counts3 = np.log2(bin_counts3)
-
+    # bin_counts3 = bin_counts3 / units
 
     plt.figure(figsize=(10, 6))
     print(bin_counts1.shape, bin_edges.shape, bin_counts2.shape)
     plt.plot(bin_edges[:-1], bin_counts1, label='eTraP', color='blue')
     plt.plot(bin_edges[:-1], bin_counts2, label='Gen4 automotive', color='red')
-    plt.plot(bin_edges[:-1], bin_counts3, label='DSEC dataset', color='green')
+    # plt.plot(bin_edges[:-1], bin_counts3, label='DSEC dataset', color='green')
 
+    plt.rcParams["font.family"] = "Times New Roman"
+    plt.rcParams['font.size'] = 12
     plt.xlabel('Time')
     plt.ylabel('Frequency [MEPS]')
     plt.title('Histogram of Events')

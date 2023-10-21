@@ -4,6 +4,7 @@ import os
 import glob
 from objects import eTraP_CLASS_TO_IDX_MAPPING, value_to_key
 from matplotlib.font_manager import FontProperties
+import math
 
 NUM_CLASSES = 8
 FIND_ASPECT_RATIO = True
@@ -33,20 +34,21 @@ if __name__ == "__main__":
         boxes = np.load(file)
         aspectRatioFrequency(aspect_ratios, boxes)
 
-    fig, axes = plt.subplots(2, 4, figsize=(15, 10))
-    axes.flatten()
+    # fig, axes = plt.subplots(2, 4, figsize=(15, 10))
+    # axes.flatten()
 
     for idx in range(NUM_CLASSES):
         class_aspect_ratio = aspect_ratios[idx]
-        class_aspect_ratio = [x for x in class_aspect_ratio if x <= 10]
+        class_aspect_ratio = [x for x in class_aspect_ratio if x <= 6]
         
-        ax = axes[idx // 4, idx % 4]
+        # ax = axes[idx // 4, idx % 4]
+        print(len(class_aspect_ratio))
+        # plt.hist(class_aspect_ratio, bins = max(50, int(len(class_aspect_ratio) ** (1./3))), edgecolor='skyblue')
+        # bins=int(math.sqrt(len(class_aspect_ratio))/2)
+        plt.xlim(0,6)
+        # ax.set_title(f'Class {value_to_key(eTraP_CLASS_TO_IDX_MAPPING, idx)}')
 
-        ax.hist(class_aspect_ratio, bins=200, edgecolor='black')
-
-        ax.set_title(f'Class {value_to_key(eTraP_CLASS_TO_IDX_MAPPING, idx)}')
-
-    plt.tight_layout()
-    plt.rcParams['font.family'] = 'Times'
-    plt.rcParams['font.size'] = 12
-    plt.show()
+        plt.tight_layout()
+        plt.rcParams['font.family'] = 'Times'
+        plt.rcParams['font.size'] = 12
+        plt.show()

@@ -4,6 +4,14 @@ Convert metavision annotation format to RVT format
 import numpy as np
 import os
 import glob
+import yaml
+
+def load_config(file_path):
+    with open(file_path, 'r') as stream:
+        config = yaml.safe_load(stream)
+    return config
+
+config = load_config('/home/exx/Documents/aayush/eventSensing/scripts/config.yaml')
 
 
 def convert_npy(npy_file):
@@ -23,16 +31,12 @@ def convert_npy(npy_file):
     converted_npy['track_id'] = old_npy['track_id']
     print("NPY format updated")
 
-    converted_npy_path = '/media/exx/Elements/aayush/rvt/dataset/annotations/new_' +  npy_file.split('/')[-1]
+    converted_npy_path = os.path.join(config['rvt']['convert_npy']['output'], npy_file.split('/')[-1])
     np.save(converted_npy_path, converted_npy)
 
 if __name__ == "__main__":
-    annotations_folder = "/media/exx/E4D8-27DA/Event_data/july27_working_dir/raw_data/labels_output"
+    annotations_folder = config['rvt']['convert_npy']['input']
     npy_files = glob.glob(os.path.join(annotations_folder, '*.npy'))
 
     for file in npy_files:   
         convert_npy(file)
-
-    
-    # convert_npy(npy_file)
-
