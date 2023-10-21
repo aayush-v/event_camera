@@ -1,0 +1,16 @@
+util:
+
+
+metavision:
+  pascal_to_bbox:
+    input:
+    output:
+
+
+red:
+
+
+rvt:
+  convert_npy:
+    input: /media/exx/data/aayush/dataset/final_annotations/nightlabels/temp
+    output: /media/exx/data/aayush/RVT/annotations
