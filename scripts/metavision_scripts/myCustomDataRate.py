@@ -10,14 +10,6 @@ Sample code that demonstrates how to visualizes live data (CD events only) from 
 
 ###### DO NOT USE THIS SCRIPT FOR CONVERTING TO CSV, PLEASE REFER TO customDataRateToCSV.py, ONLY USE THIS FOR VISUALISATION PURPOSES #####
 
-"""
-Steps to use:
-    1. Choose which filter to use and mention that in the --s-filter. This will make the raw file run with that filter from the start, instead of the default None.
-    2. Custom values for the filter can be used by passing them in the previously given args.
-    2. Make sure --csv-save arg is passed as True or else the conversion to csv will not take place.
-    3. Add the -output-path (-o) for the .csv file with filtered events.
-    4. Use metavision_evt2_raw_file_encoder to convert csv file to evt2 (csv to evt3 does not exist)
-"""
 
 from metavision_core.event_io import EventsIterator, LiveReplayEventsIterator, is_live_camera
 from metavision_sdk_core import PeriodicFrameGenerationAlgorithm

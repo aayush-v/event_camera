@@ -1,0 +1,10 @@
+# Ignore Mac system files
+.DS_store
+
+# dataset files
+.hdf5
+.h5
+
+.npy
+
+.csv

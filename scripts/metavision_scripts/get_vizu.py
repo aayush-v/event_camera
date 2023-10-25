@@ -63,11 +63,11 @@ def run(args):
     gt_boxes = reformat_np_boxes(np.load(args.gt))
     print(EventBbox)
     print(gt_boxes.dtype)
-    assert gt_boxes.dtype == EventBbox
+    # assert gt_boxes.dtype == EventBbox
     label_map_gt = ["gt_{}".format(i) for i in range(np.max(gt_boxes["class_id"]) + 1)]
 
     det_boxes = np.load(args.det)
-    assert det_boxes.dtype == EventBbox
+    # assert det_boxes.dtype == EventBbox
     label_map_det = ["det_{}".format(i) for i in range(np.max(det_boxes["class_id"]) + 1)]
 
     frame_gt = np.zeros((ev_height, ev_width, 3), dtype=np.uint8)

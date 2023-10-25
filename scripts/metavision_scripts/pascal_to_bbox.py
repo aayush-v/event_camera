@@ -6,9 +6,9 @@ import glob
 
 FPS = 30
 FRAME_TIME = 33333
-PASCAL_LABELS_DIR = '/home/exx/Documents/aayush/currentData/raw_data/july27/labels/nighttime/20-26-41/Annotations'
+PASCAL_LABELS_DIR = '/media/data/aayush/dataset/annotation_dump/reduced_recording_2023-08-24_20-57-14/Annotations'
 
-classes = {
+eTraP_CLASS_MAPPING = {
     'pedestrian': 0,
     'car': 1,
     'bicycle': 2,
@@ -20,7 +20,7 @@ classes = {
 }
 
 ########################################
-with open('text_stash.txt', 'w') as txt:
+with open('../../../text_stash.txt', 'w') as txt:
     list_boxes = []
 
     filelist = glob.glob(os.path.join(PASCAL_LABELS_DIR, '*.xml'))
@@ -46,7 +46,7 @@ with open('text_stash.txt', 'w') as txt:
                 height = float(xml_object.find('ymax').text) - yCoord
                 width  = float(xml_object.find('xmax').text) - xCoord
                 
-                classId  = classes[xml_object.find('name').text]
+                classId  = eTraP_CLASS_MAPPING[xml_object.find('name').text]
                 objectId = xml_object.find('attributes').find_all('attribute')[1].find('value').text            
                 ts = FRAME_TIME*frame_number
 
@@ -66,5 +66,5 @@ with open('text_stash.txt', 'w') as txt:
 
 ###############################
 save_filename = PASCAL_LABELS_DIR.split('/')[-2]
-np.save('/home/exx/Documents/aayush/scripts/labels_output/nighttime/' + save_filename + '_bbox.npy', boxes_array)
+np.save('/media/data/aayush/dataset/annotations_intermediate_numpy/' + save_filename + '_bbox.npy', boxes_array)
 
